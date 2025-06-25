@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Win Go - 30s Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>🎯 Win Go - 30s Game</h1>
+  <div class="wallet">Wallet: ₹<span id="balance">0</span></div>
+  <div class="timer">⏱ Time Left: <span id="timeLeft">30</span>s</div>
+  <div>🆔 Period #: <span id="period">1</span></div>
+
+  <div class="bet-box">
+    <h3>Choose Your Bet 🎲</h3>
+    <button class="color-btn red" onclick="selectColor('Red')">Red</button>
+    <button class="color-btn green" onclick="selectColor('Green')">Green</button>
+    <button class="color-btn violet" onclick="selectColor('Violet')">Violet</button>
+    <br>
+    <button class="size-btn big" onclick="selectSize('Big')">Big</button>
+    <button class="size-btn small" onclick="selectSize('Small')">Small</button>
+    <br>
+    <p>Amount: <span id="amount">100</span> ₹</p>
+    <button onclick="placeBet()">Place Bet</button>
+  </div>
+
+  <div id="roundResult" style="margin-top:20px;"></div>
+  <h3>Previous Results</h3>
+  <div id="historyList" class="history-box"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
